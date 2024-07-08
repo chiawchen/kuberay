@@ -199,6 +199,7 @@ func main() {
 		}
 	}
 
+	setupLog.Info("Hello KubeRay")
 	setupLog.Info("Setup manager")
 	restConfig := ctrl.GetConfigOrDie()
 	restConfig.UserAgent = userAgent

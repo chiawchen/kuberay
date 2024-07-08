@@ -159,6 +159,8 @@ func (r *RayClusterReconciler) Reconcile(ctx context.Context, request ctrl.Reque
 	logger := ctrl.LoggerFrom(ctx)
 	var err error
 
+	logger.Info("Hello KubeRay")
+
 	// Try to fetch the RayCluster instance
 	instance := &rayv1.RayCluster{}
 	if err = r.Get(ctx, request.NamespacedName, instance); err == nil {
